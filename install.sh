@@ -11,7 +11,6 @@ NC="\033[0m"
 
 # Define directory paths
 SWARM_DIR="$HOME/rl-swarm"
-TRAINING_DIR="$HOME/rl-swarm-training"
 TEMP_DATA_PATH="$SWARM_DIR/modal-login/temp-data"
 HOME_DIR="$HOME"
 BACKUP_DIR="$HOME/rl-swarm-backup"
@@ -19,7 +18,7 @@ BACKUP_ZIP="$HOME/rl-swarm-backup.zip"
 WEB_SERVE_DIR="/tmp/rl-swarm-serve"
 
 # Default repository
-TRAINING_REPO="https://github.com/namerose/rl-swarm.git"
+SWARM_REPO="https://github.com/namerose/rl-swarm.git"
 
 # Function to serve files via HTTP for easy download
 serve_files_via_http() {
@@ -140,7 +139,7 @@ backup_swarm_files() {
 
 install_rl_swarm() {
     echo -e "${CYAN}${BOLD}[✓] Starting RL-Swarm installation process...${NC}"
-    echo -e "${BLUE}${BOLD}[i] Repository: $TRAINING_REPO${NC}"
+    echo -e "${BLUE}${BOLD}[i] Repository: $SWARM_REPO${NC}"
 
     cd $HOME
     echo -e "${CYAN}${BOLD}[✓] Working in home directory: $HOME${NC}"
@@ -233,21 +232,14 @@ install_rl_swarm() {
         echo -e "${BOLD}${YELLOW}[✓] No existing swarm.pem found. Proceeding with fresh installation...${NC}"
     fi
 
-    echo -e "${CYAN}${BOLD}[✓] Cloning training repository into $TRAINING_DIR...${NC}"
-    if [ -d "$TRAINING_DIR" ]; then
-        echo -e "${YELLOW}${BOLD}[!] Training directory already exists. Updating...${NC}"
-        cd "$TRAINING_DIR" && git pull
-        cd $HOME
-    else
-        git clone "$TRAINING_REPO" "$TRAINING_DIR"
-    fi
-
-    echo -e "${CYAN}${BOLD}[✓] Cloning/checking main rl-swarm repository...${NC}"
+    echo -e "${CYAN}${BOLD}[✓] Cloning/checking rl-swarm repository...${NC}"
     if [ ! -d "$SWARM_DIR" ]; then
-        cd $HOME && git clone "$TRAINING_REPO" rl-swarm > /dev/null 2>&1
+        cd $HOME && git clone "$SWARM_REPO" rl-swarm > /dev/null 2>&1
         echo -e "${GREEN}${BOLD}[✓] rl-swarm repository cloned successfully${NC}"
     else
-        echo -e "${YELLOW}${BOLD}[!] rl-swarm directory already exists${NC}"
+        echo -e "${YELLOW}${BOLD}[!] rl-swarm directory already exists. Updating...${NC}"
+        cd "$SWARM_DIR" && git pull
+        cd $HOME
     fi
 
     if [ "$choice" == "1" ] && [ -f "$HOME_DIR/swarm.pem" ]; then
@@ -262,7 +254,7 @@ install_rl_swarm() {
     SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
     CUDA_SCRIPT=""
-    for DIR in "$HOME/rl-swarm-training" "$HOME/rl-swarm" "$SCRIPT_DIR" "$(pwd)" "/rl-swarm"; do
+    for DIR in "$HOME/rl-swarm" "$SCRIPT_DIR" "$(pwd)" "/rl-swarm"; do
       if [ -n "$DIR" ] && [ -f "$DIR/cuda.sh" ]; then
         CUDA_SCRIPT="$DIR/cuda.sh"
         break
@@ -292,7 +284,7 @@ install_rl_swarm() {
     fi
 
     RL_SWARM_SCRIPT=""
-    for DIR in "$HOME/rl-swarm-training" "$HOME/rl-swarm" "$SCRIPT_DIR" "$(pwd)" "/rl-swarm"; do
+    for DIR in "$HOME/rl-swarm" "$SCRIPT_DIR" "$(pwd)" "/rl-swarm"; do
       if [ -n "$DIR" ] && [ -f "$DIR/run_rl_swarm.sh" ]; then
         RL_SWARM_SCRIPT="$DIR/run_rl_swarm.sh"
         break
@@ -331,7 +323,7 @@ install_rl_swarm() {
         
         echo -e "${GREEN}${BOLD}[✓] RL-Swarm is now running in a screen session named 'gensyn'${NC}"
         echo -e "${BLUE}${BOLD}[i] To view the running process, type: screen -r gensyn${NC}"
-        echo -e "${BLUE}${BOLD}[i] Training files are located in: $TRAINING_DIR${NC}"
+        echo -e "${BLUE}${BOLD}[i] RL-Swarm files are located in: $SWARM_DIR${NC}"
     else
         echo -e "${RED}${BOLD}[✗] Could not find run_rl_swarm.sh. Cannot start RL-Swarm.${NC}"
         echo -e "${YELLOW}${BOLD}[!] Please make sure run_rl_swarm.sh is in one of the repositories.${NC}"
@@ -340,15 +332,15 @@ install_rl_swarm() {
 
 while [[ $# -gt 0 ]]; do
   case $1 in
-    --training-repo=*)
-      TRAINING_REPO="${1#*=}"
+    --swarm-repo=*)
+      SWARM_REPO="${1#*=}"
       shift
       ;;
     --help)
       echo "Usage: $0 [options]"
       echo "Options:"
-      echo "  --training-repo=URL    Specify the GitHub repository for training files (default: $TRAINING_REPO)"
-      echo "  --help                 Display this help message"
+      echo "  --swarm-repo=URL    Specify the GitHub repository for rl-swarm (default: $SWARM_REPO)"
+      echo "  --help              Display this help message"
       exit 0
       ;;
     *)
@@ -360,7 +352,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 echo -e "${BOLD}${CYAN}╔════════════════════════════════════════╗${NC}"
-echo -e "${BOLD}${CYAN}║            Oceans RL-Swarm             ║${NC}"
+echo -e "${BOLD}${CYAN}║        Oceans - Gensyn RL-Swarm        ║${NC}"
 echo -e "${BOLD}${CYAN}╠════════════════════════════════════════╣${NC}"
 echo -e "${BOLD}${CYAN}║                                        ║${NC}"
 echo -e "${BOLD}${CYAN}║  ${GREEN}1) Install/Update RL-Swarm            ${CYAN}║${NC}"
