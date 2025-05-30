@@ -69,7 +69,7 @@ screen -r gensyn
 
 If System Failed do Backup Recovery Swarm Data then you need to Download Manually from the SFTP instead , you can use WinSCP or Bitvise or any tools!
 
-## ERROR
+## ERROR ( before build server for login using tunnel)
 In somecase when installing got stuck for long time just CTRL+C and then re run
 - cd rl-swarm
 - screen
