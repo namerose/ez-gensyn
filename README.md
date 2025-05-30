@@ -71,6 +71,9 @@ If System Failed do Backup Recovery Swarm Data then you need to Download Manuall
 
 ## ERROR ( before build server for login using tunnel)
 In somecase when installing got stuck for long time just CTRL+C and then re run
+
+![image](https://github.com/user-attachments/assets/d5b096cf-c2c4-44e4-a8b4-99e705269e61)
+
 - cd rl-swarm
 - screen
 - ./run_rl_swarm.sh
