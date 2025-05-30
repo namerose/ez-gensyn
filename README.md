@@ -46,7 +46,7 @@ screen -r gensyn
 ## 📥 Customization
 
 **Reduce The Fraction**
-- Easily change the Fraction to reduce VRAM usage make sure for Anti OOM!
+- Easily change the Fraction to reduce VRAM usage make sure for reduce OOM!
 ![Screenshot 2025-05-29 145010](https://github.com/user-attachments/assets/5d307896-07ab-4546-82bc-312d2599f2f2)
 
 
@@ -56,6 +56,7 @@ screen -r gensyn
 
 **Backup your data easily**
 - Just Select Number 2 and follow the steps
+
 ![Screenshot 2025-05-29 145104](https://github.com/user-attachments/assets/638f7a36-c750-42aa-8174-4e64a8b45733)
 
 ![Screenshot 2025-05-30 044256](https://github.com/user-attachments/assets/0474c596-d68f-46c0-8b15-0ef319bb3f9d)
