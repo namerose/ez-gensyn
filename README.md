@@ -68,3 +68,9 @@ screen -r gensyn
 ![Screenshot 2025-05-30 044343](https://github.com/user-attachments/assets/41118bcd-4f87-441f-a403-43c1c2863473)
 
 If System Failed do Backup Recovery Swarm Data then you need to Download Manually from the SFTP instead , you can use WinSCP or Bitvise or any tools!
+
+## ERROR
+In somecase when installing got stuck for long time just CTRL+C and then re run
+- cd rl-swarm
+- screen
+- ./run_rl_swarm.sh
