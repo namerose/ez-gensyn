@@ -38,6 +38,7 @@ chmod +x ez-gensyn/install.sh && ./ez-gensyn/install.sh
 
 **Go to train Section**
 - At this step just follow that terminal says
+
 ![Screenshot 2025-05-29 141914](https://github.com/user-attachments/assets/7f20a43e-a83e-43c9-8f3c-c6a7573547c0)
 ```bash
 screen -r gensyn
@@ -47,11 +48,13 @@ screen -r gensyn
 
 **Reduce The Fraction**
 - Easily change the Fraction to reduce VRAM usage make sure for reduce OOM!
+
 ![Screenshot 2025-05-29 145010](https://github.com/user-attachments/assets/5d307896-07ab-4546-82bc-312d2599f2f2)
 
 
 **Change Steps, Etc**
 - Easily Change Config without changing the files
+
 ![Screenshot 2025-05-29 145104](https://github.com/user-attachments/assets/638f7a36-c750-42aa-8174-4e64a8b45733)
 
 **Backup your data easily**
