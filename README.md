@@ -14,7 +14,7 @@
 ```bash
 cd $HOME
 ```
-2. **Install `sudo`**
+2. **Install `sudo`** ( if you already availavle `sudo` you can skip this part )
 ```bash
 apt update && apt install -y sudo
 ```
