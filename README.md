@@ -24,11 +24,11 @@ sudo apt install git
 ```
 4. **do Clone Repo**  
 ```bash
-git clone https://github.com/namerose/gensyn-ez.git
+git clone https://github.com/namerose/ez-gensyn.git
 ```
 5. **run**
 ```bash
-chmod +x gensyn-ez/install.sh && ./gensyn-ez/install.sh
+chmod +x ez-gensyn/install.sh && ./ez-gensyn/install.sh
 ```
 
 **Go to train Section**
