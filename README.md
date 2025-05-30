@@ -22,11 +22,11 @@ apt update && apt install -y sudo
 ```bash
 sudo apt install git
 ```
-4. **do Clone Repo**  
+4. **Clone Repo**  
 ```bash
 git clone https://github.com/namerose/ez-gensyn.git
 ```
-5. **run**
+5. **Run**
 ```bash
 chmod +x ez-gensyn/install.sh && ./ez-gensyn/install.sh
 ```
