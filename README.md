@@ -32,6 +32,7 @@ chmod +x ez-gensyn/install.sh && ./ez-gensyn/install.sh
 ```
 **Install**
 - When the menu show select 1 and just go!
+
 ![Screenshot 2025-05-30 043943](https://github.com/user-attachments/assets/6f0976f0-a26e-4db6-bf48-4e2a6802597e)
 
 
