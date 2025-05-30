@@ -35,7 +35,9 @@ chmod +x ez-gensyn/install.sh && ./ez-gensyn/install.sh
 
 ![Screenshot 2025-05-30 043943](https://github.com/user-attachments/assets/6f0976f0-a26e-4db6-bf48-4e2a6802597e)
 
-- NOW WAIT! the system is installing the rest!
+NOW WAIT! the system is installing the rest!
+
+When it's clear installing Follow This Step bellow
 
 **Go to train Section**
 - At this step just follow that terminal says
