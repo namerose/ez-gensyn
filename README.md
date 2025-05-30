@@ -54,3 +54,11 @@ screen -r gensyn
 - Easily Change Config without changing the files
 ![Screenshot 2025-05-29 145104](https://github.com/user-attachments/assets/638f7a36-c750-42aa-8174-4e64a8b45733)
 
+**Backup your data easily**
+- Just Select Number 2 and follow the steps
+![Screenshot 2025-05-29 145104](https://github.com/user-attachments/assets/638f7a36-c750-42aa-8174-4e64a8b45733)
+
+![Screenshot 2025-05-30 044256](https://github.com/user-attachments/assets/0474c596-d68f-46c0-8b15-0ef319bb3f9d)
+
+![Screenshot 2025-05-30 044343](https://github.com/user-attachments/assets/41118bcd-4f87-441f-a403-43c1c2863473)
+
