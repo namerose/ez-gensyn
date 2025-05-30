@@ -67,3 +67,4 @@ screen -r gensyn
 
 ![Screenshot 2025-05-30 044343](https://github.com/user-attachments/assets/41118bcd-4f87-441f-a403-43c1c2863473)
 
+If System Failed do Backup Recovery Swarm Data then you need to Download Manually from the SFTP instead 
