@@ -74,6 +74,13 @@ In somecase when installing got stuck for long time just CTRL+C and then re run
 
 ![image](https://github.com/user-attachments/assets/d5b096cf-c2c4-44e4-a8b4-99e705269e61)
 
-- cd rl-swarm
-- screen
-- ./run_rl_swarm.sh
+```bash
+cd rl-swarm
+```
+```bash
+screen
+```
+```bash
+./run_rl_swarm.sh
+```
+Make sure you're on Home or cd $HOME directory !
