@@ -50,7 +50,7 @@ screen -r gensyn
 ## 📥 Customization
 
 **Reduce The Fraction**
-- Easily change the Fraction to reduce VRAM usage make sure for reduce OOM!
+- Easily change the Fraction to reduce VRAM usage make sure for reduce OOM! ( other configuration is modified on my version RL-Swarm for reducing OOM )
 
 ![Screenshot 2025-05-29 145010](https://github.com/user-attachments/assets/5d307896-07ab-4546-82bc-312d2599f2f2)
 
