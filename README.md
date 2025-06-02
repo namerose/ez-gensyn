@@ -60,7 +60,7 @@ screen -r gensyn
 
 ![Screenshot 2025-05-29 145104](https://github.com/user-attachments/assets/638f7a36-c750-42aa-8174-4e64a8b45733)
 
-- After Following steps you can chose wich one to use for Login ( Ngrok, Cloudflare, localtunnel or localhost )
+- After Following steps you can chose wich one to use for Login ( Ngrok, Cloudflare, localtunnel or localhost ) ( if using localtunnel your password is your public server IP )
 
 **Backup your data easily**
 - Just Select Number 2 and follow the steps
